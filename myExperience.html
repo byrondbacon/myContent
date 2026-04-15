@@ -38,7 +38,22 @@
   <source src="myExperience.m4a" type="audio/mp4">
 </audio>
 
-<h4>2 mins: 36 secs</h4>
+<!-- Where the duration will appear -->
+<div id="audioLength" style="margin-top:10px; font-weight:bold;"></div>
+
+<script>
+  const audio = document.getElementById('myAudio');
+  const display = document.getElementById('audioLength');
+
+  audio.addEventListener('loadedmetadata', () => {
+    const totalSeconds = Math.floor(audio.duration);
+    const minutes = Math.floor(totalSeconds / 60);
+    const seconds = totalSeconds % 60;
+
+    display.textContent = `Length: ${minutes}:${seconds.toString().padStart(2, '0')}`;
+  });
+</script>
+<!-- Where the duration will appear -->
 
 <h4>
 Take look at these additional <a href="https://byrondbacon.github.io/myContent/#resources" target="forreal">videos</a> on my site by expanding the "Intro Videos" section under the "Resources" heading.
