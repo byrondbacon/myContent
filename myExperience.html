@@ -23,13 +23,21 @@
 <body>
 
 <h2>Click my image below to hear my message to you!</h2>
-<h4>Press "Play" when new tab appears.</h4>
+<!--h4>Press "Play" when new tab appears.</h4-->
 <h2><i>"My Experience"</i></h2>
 <!-- Your image -->
 
-<a href="myExperience.m4a" target="myExperienceRecording">
-  <img src="Red sweatshirt heads.png" alt="Click to open location" style="cursor:pointer;">
-</a>
+<!-- The clickable image -->
+<img src="Red sweatshirt heads.png"
+     alt="Click to play audio"
+     style="cursor:pointer;"
+     onclick="document.getElementById('myAudio').play();">
+
+<!-- Hidden audio player -->
+<audio id="myAudio">
+  <source src="myExperience.m4a" type="audio/mp4">
+</audio>
+
 <h4>2 mins: 36 secs</h4>
 
 <h4>
