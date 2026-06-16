@@ -2,54 +2,163 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Byron's Help Pages</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Open House Furniture Sale</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      line-height: 1.5;
-      margin: 1.5rem;
-      max-width: 900px;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f5f5f5;
+      color: #333;
     }
-    img {
-      max-width: 100%;
-      height: auto;
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
-    details {
-      margin-bottom: 1rem;
-      padding: 0.5rem 0.75rem;
+
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 0 15px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .item {
+      background: #fff;
+      border-radius: 6px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .photo-group {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      padding: 10px;
+    }
+
+    .photo-group img {
+      width: 100%;
       border-radius: 4px;
-      border: 1px solid #ddd;
-      background: #fafafa;
+      display: block;
     }
-    summary {
-      cursor: pointer;
-      font-weight: 600;
+
+    .item-details {
+      padding: 12px;
     }
-    h1, h2, h3, h4 {
-      margin-top: 1.5rem;
+
+    .item-title {
+      font-weight: bold;
+      margin-bottom: 6px;
+      font-size: 1.1rem;
     }
-    a {
-      color: #0b63ce;
-      text-decoration: none;
+
+    .item-price {
+      color: #007b5e;
+      font-weight: bold;
+      margin-bottom: 6px;
     }
-    a:hover {
-      text-decoration: underline;
+
+    .item-desc {
+      font-size: 0.9rem;
+      line-height: 1.4;
     }
-    code {
-      font-family: Consolas, "Courier New", monospace;
-    }
-    ul {
-      margin-top: 0.25rem;
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.85rem;
+      color: #666;
     }
   </style>
 </head>
 <body>
 
-  <img src="Red sweatshirt heads.png" width="150" alt="Red sweatshirt heads">
+<header>
+  <h1>Open House Furniture Sale</h1>
+  <p>One-day event — quality pieces, great prices</p>
+</header>
 
-  <h1>DOWN INDEFINITELY</h1>
+<div class="container">
 
+  <section class="gallery">
+
+    <!-- Dining Set -->
+    <div class="item">      
+      <div class="photo-group">
+        <div class="item-title">Dining Room Set</div>
+        <img src="Dining 1.jpg">
+        <img src="Dining - Sideboard.jpg">
+        <img src="Dining 2.jpg">
+        <img src="Dining 3.jpg">
+        <!-- Add more photos as needed -->
+      </div>
+    </div>
+
+        <!-- Blue Swivel Chairs -->
+    <div class="item">
+      <div class="photo-group">
+        <div class="item-title">Blue Swivel Chairs</div>
+        <img src="Blue Swivel Two.jpg">
+        <img src="Blue Swivel Two 1.jpg">
+        <img src="Blue Swivel.jpg">
+        <img src="Blue Swivel One 2.jpg">
+      </div>
+    </div>
+
+    <!-- Pink Lamps -->
+    <div class="item">
+      <div class="photo-group">
+      <div class="item-title">Lamp Set</div>
+        <img src="Lamps.jpg">
+      </div>
+    <!--/div-->
+
+        <!-- White Sectional Sofa -->
+    <!--div class="item"-->
+      <div class="photo-group">
+        <div class="item-title">White Sectional Sofa</div>
+        <img src="White Sofa 1.jpg">
+        <img src="White Sofa 2.jpg">
+      </div>
+    </div>
+
+    <!-- Glass & Brass Coffee Table -->
+    <div class="item">
+      <div class="photo-group">
+        <div class="item-title">Glass & Brass Coffee Table</div>
+        <img src="Glass Table 1.jpg">
+        <img src="Glass Table 2.jpg">
+      </div>
+    <!--/div-->
+
+    <!-- Blue Couch -->
+    <!--div class="item"-->
+      <div class="photo-group">
+        <div class="item-title">Blue Sofa Set</div>
+        <img src="Blue Couch 1.jpg">
+        <img src="Blue Couch 2.jpg">
+      </div>
+    </div>
+
+
+
+
+  </section>
+
+</div>
+
+<footer>
+  <!--Contact: <a href="mailto:youremail@example.com">youremail@example.com</a-->
+</footer>
 
 </body>
 </html>
